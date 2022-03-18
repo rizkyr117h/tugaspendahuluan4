@@ -10,6 +10,18 @@ namespace tp4_1302203122
     {
         static void Main(string[] args)
         {
+            string namaKu;
+            Console.Write("Massukan Nama : ");
+            namaKu = Console.ReadLine();
+            HaloGeneric.sapauser<string>(namaKu);
         }
     }
+    class HaloGeneric
+    {
+        public static void sapauser<t>(t nama)
+        {
+            Console.WriteLine("halo user" + nama);
+        }
+    }
+
 }
